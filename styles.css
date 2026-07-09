@@ -1,0 +1,343 @@
+/* ===== SHARED STYLES – FIFA WORLD CUP 2022 ===== */
+/* dark, sporty, gold accent */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0d10;
+  background-image: radial-gradient(
+    circle at 20% 30%,
+    #1a1f26 0%,
+    #0a0c0e 100%
+  );
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: #f0f4fa;
+  line-height: 1.5;
+  padding: 1.5rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: rgba(10, 14, 19, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 3rem 3rem 2rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 0 2px #2a2f35 inset;
+  padding: 2rem 2.5rem 3rem;
+  transition: all 0.2s;
+}
+
+/* ----- HEADER / NAV ----- */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #d4af37;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.logo i {
+  font-size: 2.8rem;
+  color: #d4af37;
+  filter: drop-shadow(0 0 6px #d4af3780);
+}
+
+.logo h1 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 900;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #f5e56b, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 0 12px #d4af3740;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  background: #d4af37;
+  color: #0b0d10;
+  padding: 0.1rem 0.8rem;
+  border-radius: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-left: 0.3rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  background: rgba(212, 175, 55, 0.06);
+  padding: 0.6rem 1.2rem;
+  border-radius: 60px;
+  border: 1px solid #d4af3755;
+}
+
+.nav-links a {
+  color: #e8edf5;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 1rem;
+  border-radius: 40px;
+  transition: 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.95rem;
+}
+
+.nav-links a i {
+  color: #d4af37;
+  font-size: 1rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: #d4af37;
+  color: #0b0d10;
+  box-shadow: 0 0 20px #d4af3770;
+}
+
+.nav-links a:hover i,
+.nav-links a.active i {
+  color: #0b0d10;
+}
+
+/* ----- TITLE ----- */
+.page-title {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  border-left: 8px solid #d4af37;
+  padding-left: 1.2rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 0 10px #d4af3730;
+}
+
+/* ----- GRIDS & CARDS ----- */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #141a21;
+  border-radius: 2rem;
+  padding: 1.8rem 1.5rem;
+  border: 1px solid #d4af3730;
+  box-shadow: 0 10px 20px -8px #00000080, 0 0 0 1px #2f3640 inset;
+  transition: 0.2s;
+  backdrop-filter: blur(4px);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #d4af37;
+  box-shadow: 0 20px 30px -10px #000000, 0 0 0 1px #d4af3760 inset;
+}
+
+.card h3 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #d4af37;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card h3 i {
+  font-size: 1.6rem;
+  color: #d4af37;
+}
+
+.highlight {
+  color: #f5d779;
+  font-weight: 600;
+}
+
+/* ----- MATCH ITEMS ----- */
+.match-item {
+  background: #1e262f;
+  border-radius: 40px;
+  padding: 0.9rem 1.4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 5px solid #d4af37;
+  box-shadow: 0 2px 8px #00000055;
+}
+
+.match-item .teams {
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.match-item .teams i {
+  color: #d4af37;
+  font-size: 1rem;
+}
+
+.match-item .result {
+  background: #2b3542;
+  padding: 0.2rem 1rem;
+  border-radius: 40px;
+  font-weight: 700;
+  color: #f0f4fa;
+  letter-spacing: 0.5px;
+}
+
+.match-item .result.winner {
+  background: #d4af37;
+  color: #0b0d10;
+  box-shadow: 0 0 15px #d4af3790;
+}
+
+/* ----- STATS ----- */
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #2f3845;
+  padding: 0.7rem 0.3rem;
+  font-weight: 500;
+}
+
+.stat-row:last-child {
+  border: none;
+}
+
+.stat-label {
+  color: #aab7cc;
+}
+
+.stat-value {
+  font-weight: 700;
+  color: #f5d779;
+}
+
+/* ----- GROUPS ----- */
+.group-box {
+  background: #1e262f;
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+  border: 1px solid #d4af3740;
+}
+
+.group-box h4 {
+  font-family: "Orbitron", sans-serif;
+  color: #d4af37;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.group-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.group-box ul li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #2f3845;
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-box ul li:last-child {
+  border: none;
+}
+
+/* ----- CONTACT ----- */
+.contact-info {
+  background: #1a212a;
+  border-radius: 2rem;
+  padding: 2rem;
+  border: 1px solid #d4af3740;
+}
+
+.contact-info i {
+  color: #d4af37;
+  width: 2rem;
+  font-size: 1.4rem;
+}
+
+/* ----- BUTTON ----- */
+.btn {
+  display: inline-block;
+  background: #d4af37;
+  color: #0b0d10;
+  font-weight: 700;
+  padding: 0.6rem 1.8rem;
+  border-radius: 60px;
+  border: none;
+  font-size: 1rem;
+  cursor: default;
+  box-shadow: 0 0 20px #d4af3740;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+/* ----- FOOTER ----- */
+footer {
+  margin-top: 3.5rem;
+  border-top: 1px solid #d4af3730;
+  padding-top: 1.8rem;
+  text-align: center;
+  color: #8d9aad;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 700px) {
+  .container {
+    padding: 1.2rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .logo h1 {
+    font-size: 1.6rem;
+  }
+}
